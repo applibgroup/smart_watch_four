@@ -1,0 +1,294 @@
+
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 220px;
+    height: 220px;
+    background-image: url(common/images/bg_lines.png);
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 30%;
+}
+
+.lft_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 40px;
+    top: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+
+.header .lft_container .weather_container{
+    position: relative;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header .lft_container .weather_container .weather image{
+    position: absolute;
+    height: 20px;
+    width: 25px;
+    right: 7px;
+
+/*    background-color: #fff;*/
+}
+
+.header .lft_container .weather_container .weather_text{
+    height: 55px;
+    width: 100px;
+    top: 8px;
+    left: -3px;
+}
+
+.header .lft_container .weather_container .weather_text text{
+    font-size: 8px;
+    position: absolute;
+
+}
+
+.date{
+    position: relative;
+    bottom: 20px;
+}
+
+.date text{
+    position: absolute;
+    font-size: 8px;
+}
+
+
+
+.container .header .cal{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 68px;
+    font-family: roboto;
+}
+
+.container .header .cal image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+}
+
+.container .header .cal #cal_ic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.container .header .cal #range{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    height: 40px;
+    width: 27px;
+
+}
+
+.cal_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    left: -6px;
+}
+
+.cal_text text{
+    font-size: 8px;
+    color: #00FFFF;
+}
+
+.cal_text #kcal{
+    font-size: 7px;
+}
+.clock {
+    display: flex;
+    flex-direction: column;
+}
+.clock text {
+    font-size: 8px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.clock .time image{
+    height: 38px;
+    width: 25px;
+}
+
+.clock .time #last{
+    height: 40px;
+    width: 28px;
+}
+
+.clock .time #colon{
+    height: 30px;
+    width: 10px;
+    margin-top: 6px;
+}
+
+.footer .bpm {
+    font-family: poppins;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    margin-left: 20px;
+    margin-top: 21px;
+}
+.footer .bpm image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 40px;
+}
+
+.footer .bpm #bpm_ic{
+    height: 15px;
+    width: 17px;
+    margin-top: 12px;
+    margin-left: 12px;
+}
+
+.footer .bpm #count{
+    position: absolute;
+    top: 14px;
+    right: 2px;
+    height: 27px;
+    width: 41px;
+}
+
+
+.footer .bpm .bpm_text {
+    display: flex;
+    flex-direction: column;
+    left: 5px;
+    bottom:25px;
+}
+
+.footer .bpm .bpm_text text{
+    font-size: 8px;
+    color:#FF0000;
+
+}
+
+.footer .bpm .bpm_text #bpm_title{
+    font-size: 4px;
+    margin-left: 5px;
+}
+
+.corner{
+    margin-top: 20px;
+    padding-left: 38px;
+    display: flex;
+    flex-direction: column;
+}
+
+.corner .steps_container text{
+    font-size: 8px;
+    margin-top: 10px;
+}
+
+.corner .steps_container .steps_range {
+    position: relative;
+    margin-top: 5px;
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+}
+
+.corner .steps_container .steps_range image{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.corner .steps_container .steps_range #steps_ic{
+    height: 15px;
+    width: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.corner .steps_container .steps_range #steps_count{
+    height: 40px;
+    width: 20px;
+    margin-left: 10px;
+}
+
+
+.corner #noti {
+    font-size: 6px;
+    margin-top: 3px;
+}
+
+
+
+
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100px;
+    }
+}
+
+@media screen and (device-type: wearable) {
+    .title {
+        font-size: 28px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("/common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 100px;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60px;
+    }
+}

@@ -1,0 +1,80 @@
+<div class="body">
+    <div class="container">
+        <div class="header">
+            <div class="lft_container">
+                <div class="weather_container">
+                    <div class="weather">
+                        <image if="{{ weather == 'partly sunny' }}" src="common/images/partly_sunny.png"></image>
+                        <image elif="{{ weather == 'partly sunny 1' }}" src="common/images/partly_sunny_1.png"></image>
+                        <image elif="{{ weather == 'cloudy' }}" src="common/images/cloudy.png"></image>
+                        <image elif="{{ weather == 'windy' }}" src="common/images/windy.png"></image>
+                        <image elif="{{ weather == 'rainy' }}" src="common/images/rainy.png"></image>
+                        <image elif="{{ weather == 'sleeting' }}" src="common/images/sleeting.png"></image>
+                        <image elif="{{ weather == 'sun & rain' }}" src="common/images/sun_rain.png"></image>
+                        <image elif="{{ weather == 'sun & windy' }}" src="common/images/sun_windy.png"></image>
+                        <image elif="{{ weather == 'sunny' }}" src="common/images/sunny.png"></image>
+                        <image elif="{{ weather == 'thunderstorm' }}" src="common/images/Thunderstorm.png"></image>
+                        <image elif="{{ weather == 'thunderstorm & rain' }}" src="common/images/thunderstorm_rain.png">
+                        </image>
+                        <image else src="common/images/sunny.png"></image>
+                    </div>
+                    <div class="weather_text">
+                        <text>{{ weather }}</text>
+                    </div>
+                </div>
+
+                <div class="date">
+                    <text>{{ date_d }} {{ date_m }} |  {{ date_w }}</text>
+                </div>
+            </div>
+
+            <div class="cal">
+                <image src="common/images/calories_range_bg.png"></image>
+                <image id="cal_ic" src="common/images/calories_icon.png"></image>
+                <image id="range" src="common/images/calories_range.png"></image>
+                <div class="cal_text">
+                    <text id="kcal"> kcal </text>
+                    <text>{{ kcal }}</text>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clock">
+            <text>{{ time_period }}</text>
+            <div class="time">
+                <image src="common/images/{{ time_h_0 }}.png"></image>
+                <image src="common/images/{{ time_h_1 }}.png"></image>
+                <image id="colon" src="common/images/colon.png"></image>
+                <image src="common/images/{{ time_m_0 }}.png"></image>
+                <image id="last" src="common/images/{{ time_m_1 }}.png"></image>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="bpm">
+                <image src="common/images/BP_range_bg.png"></image>
+                <image id="bpm_ic" src="common/images/heart_icon.png"></image>
+                <image id="count" src="common/images/BP_range.png"></image>
+                <div class="bpm_text">
+                    <text>{{ bpm }}</text>
+                    <text id="bpm_title"> BPM </text>
+
+                </div>
+            </div>
+            <div class="corner">
+                <div class="steps_container">
+                    <text>{{step}}</text>
+                    <div class="steps_range">
+                        <image src="common/images/steps_range_bg.png"></image>
+                        <image id="steps_ic" src="common/images/steps_icon.png"></image>
+                        <image id="steps_count" src="common/images/steps_range.png"></image>
+                    </div>
+                </div>
+
+                <text id="noti">{{noti}}</text>
+            </div>
+        </div>
+
+    </div>
+</div>
