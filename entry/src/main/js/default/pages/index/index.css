@@ -143,13 +143,13 @@
 }
 
 .clock .time image{
-    height: 38px;
+    height: 40px;
     width: 25px;
 }
 
 .clock .time #last{
     height: 40px;
-    width: 28px;
+    width: 25px;
 }
 
 .clock .time #colon{

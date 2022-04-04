@@ -1,4 +1,4 @@
-package com.example.watch4;
+package com.hmos.app.watch4;
 
 import ohos.ace.ability.AceAbility;
 import ohos.aafwk.content.Intent;
