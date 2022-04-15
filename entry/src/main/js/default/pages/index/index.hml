@@ -50,8 +50,8 @@
                            style="height : 34px; width : 16px; margin-top : 0px; padding-top : 2px;"></image>
 
                     <image if="{{ time_h_1 != 1 && time_h_1 != 2 }}" src="common/images/{{ time_h_1 }}.png"></image>
-                    <image elif="{{ time_h_1 == 2 }}" src="common/images/{{ time_h_1 }}.png"
-                           style="height : 39px; width : 25px;"></image>
+                    <image elif="{{ time_h_1 == 2 || time-h_1 == 7 }}" src="common/images/{{ time_h_1 }}.png"
+                           style="height : 35px; width : 25px;"></image>
                     <image else src="common/images/{{ time_h_1 }}.png"
                            style="height : 34px; width : 16px; margin-top : 0px; padding-top : 2px;"></image>
                 </div>

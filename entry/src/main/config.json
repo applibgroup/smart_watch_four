@@ -7,7 +7,13 @@
       "name": "1.0.0"
     }
   },
-  "deviceConfig": {},
+  "deviceConfig": {
+    "default": {
+      "network": {
+        "cleartextTraffic": true
+      }
+    }
+  },
   "module": {
     "package": "com.hmos.app.watch4",
     "name": "com.hmos.app.watch4.MyApplication",
@@ -55,6 +61,25 @@
           "designWidth": 720,
           "autoDesignWidth": true
         }
+      }
+    ],
+    "reqPermissions": [
+      {
+        "name": "ohos.permission.ACTIVITY_MOTION",
+        "reason": "To count steps",
+        "usedScene":
+        {
+          "ability": ["com.harmonyos.mystepsjs.MainAbility"],
+          "when": "always"
+        }
+      },
+      {
+      "name": "ohos.permission.LOCATION_IN_BACKGROUND",
+      "reason": "Enable Location to display weather",
+      "usedScene": {
+        "ability": ["com.myapplication.LocationAbility"],
+        "when": "inuse"
+      }
       }
     ]
   }
