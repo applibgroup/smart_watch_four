@@ -73,19 +73,20 @@ export default {
         let data;
         fetch.fetch({
             url:'https://api.openweathermap.org/data/2.5/weather?lat=16.5062&lon=80.6480&appid=9ca3abfc02f621a4fe7696f670f04a57',
-            responseType:"json",
+            responseType:"JSON",
             method: 'GET',
-            success:function(resp)
+            success:function(res)
             {
-                data = JSON.parse(resp);
+                data = JSON.parse(res.data);
+                console.log("Data :" +data + " "+ res + " ");
             },
+
             fail:(data,code) => {
                 console.log("fail data: "+ JSON.stringify(data) + " fail code: "+ code );
             },
             complete: ()=>{
-                this.weather = data.weather.main ;
-                console.log("Weather :"+data.weather.main)
-            }
+                this.weather = data.weather[0].main ;
+                console.log("Weather :"+this.weather+ " "+ this.weather[0].main);            }
         })
 
 
