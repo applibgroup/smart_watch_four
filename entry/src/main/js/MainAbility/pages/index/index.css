@@ -1,0 +1,310 @@
+
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#111;
+    color: #FFFFFF;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(common/images/bg_lines.png);
+}
+
+.header{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    top: -28fp;
+/*    background-color: aliceblue;*/
+}
+
+.lft_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 35fp;
+    top: 50fp;
+    height: 100%;
+    width: 100%;
+}
+
+
+.header .lft_container .weather_container{
+    position: relative;
+    top: -10fp;
+    left: -20fp;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.header .lft_container .weather_container .weather
+{
+    width: 80fp;
+    height: 100%;
+/*    background-color: aliceblue;*/
+}
+
+.header .lft_container .weather_container .weather image{
+    position: absolute;
+    height: 20fp;
+    width: 25fp;
+    right: 7fp;
+
+/*    background-color: #fff;*/
+}
+
+.header .lft_container .weather_container .weather_text{
+    height: 100%;
+    width: 100%;
+    top: 8fp;
+    left: -3fp;
+    color: #FFFFFF;
+}
+
+.header .lft_container .weather_container .weather_text text{
+    font-size: 7fp;
+    position: absolute;
+}
+
+.date{
+    position: relative;
+    top: -20fp;
+    left: 10fp;
+    height: 100%;
+    width: 100%;
+}
+
+.date text{
+    position: absolute;
+    font-size: 7fp;
+    color: #FFFFFF;
+}
+
+
+
+.container .header .cal{
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 47fp;
+    right: 71fp;
+    font-family: roboto;
+}
+
+.container .header .cal image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 41fp;
+    width: 41fp;
+}
+
+.container .header .cal #cal_ic{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20fp;
+    height: 20fp;
+    margin-top: 10fp;
+    margin-left: 10fp;
+}
+
+.container .header .cal #range{
+    position: absolute;
+    top: 0;
+    left: 15fp;
+    height: 41fp;
+    width: 27fp;
+
+}
+
+.cal_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 27fp;
+    left: -5fp;
+}
+
+.cal_text text{
+    font-size: 8fp;
+    color: #00FFFF;
+}
+
+.cal_text #kcal{
+    font-size: 5fp;
+}
+.clock {
+    display: flex;
+    flex-direction: column;
+}
+.clock text {
+    font-size: 8fp;
+    margin-left: 5fp;
+    margin-bottom: 5fp;
+}
+
+.clock .time image{
+    height: 40fp;
+    width: 26fp;
+}
+
+.clock .time #last{
+    height: 40fp;
+    width: 25fp;
+}
+
+.clock .time #colon{
+    height: 30fp;
+    width: 10fp;
+    margin-top: 6fp;
+}
+
+.footer .bpm {
+    font-family: poppins;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 60fp;
+    width: 60fp;
+    margin-left: 14fp;
+    margin-top: 25fp;
+}
+.footer .bpm image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 41fp;
+    width: 41fp;
+}
+
+.footer .bpm #bpm_ic{
+    height: 15fp;
+    width: 17fp;
+    margin-top: 14fp;
+    margin-left: 12fp;
+}
+
+.footer .bpm #count{
+    position: absolute;
+    top: 14fp;
+    right: 2fp;
+    height: 28fp;
+    width: 42fp;
+}
+
+
+.footer .bpm .bpm_text {
+    display: flex;
+    flex-direction: column;
+    left: 5fp;
+    bottom:25fp;
+}
+
+.footer .bpm .bpm_text text{
+    font-size: 8fp;
+    color:#FF0000;
+
+}
+
+.footer .bpm .bpm_text #bpm_title{
+    font-size: 4fp;
+    margin-left: 5fp;
+}
+
+.corner{
+    margin-top: 20fp;
+    padding-left: 38fp;
+    display: flex;
+    flex-direction: column;
+}
+
+.corner .steps_container text{
+    font-size: 8fp;
+    margin-top: 10fp;
+}
+
+.corner .steps_container .steps_range {
+    position: relative;
+    margin-top: 5fp;
+    height: 25fp;
+    width: 25fp;
+    margin-left: 5fp;
+}
+
+.corner .steps_container .steps_range image{
+    position: absolute;
+    height: 40fp;
+    width: 40fp;
+
+}
+
+.corner .steps_container .steps_range #steps_ic{
+    height: 15fp;
+    width: 15fp;
+    margin-top: 5fp;
+    margin-left: 5fp;
+}
+
+.corner .steps_container .steps_range #steps_count{
+    height: 40fp;
+    width: 20fp;
+    margin-left: 10fp;
+}
+
+
+.corner #noti {
+    font-size: 6fp;
+    margin-top: 3fp;
+}
+
+
+
+
+
+@media screen and (device-type: tablet) and (orientation: landscape) {
+    .title {
+        font-size: 100fp;
+    }
+}
+
+@media screen and (device-type: wearable) {
+    .title {
+        font-size: 28fp;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: tv) {
+    .container {
+        background-image: url("/common/images/Wallpaper.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .title {
+        font-size: 100fp;
+        color: #FFFFFF;
+    }
+}
+
+@media screen and (device-type: phone) and (orientation: landscape) {
+    .title {
+        font-size: 60fp;
+    }
+}

@@ -46,7 +46,7 @@
     "dpi": 320,
     "orientation": "landscape",
     "language": "zh_CN",
-    "colorMode": "light"
+    "colorMode": "dark"
    },
    {
     "id": "Watch3",
@@ -64,8 +64,8 @@
    "Watch3"
   ],
   "availableProfileList": [
-   "MatePadPro",
    "P40",
+   "MatePadPro",
    "MateX2",
    "TV"
   ]
