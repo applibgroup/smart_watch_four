@@ -1,7 +1,6 @@
 // @ts-nocheck
 import fetch from '@system.fetch';
 import geolocation from '@system.geolocation';
-import json_data from '../../i18n/weather_data.json';
 export default {
     data: {
         weather: "sun & windy",
@@ -17,6 +16,8 @@ export default {
         //PM or AM
         step: "10000",
         noti: "Team Meeting 11am",
+        lat: "16.5062",
+        long: "80.6480"
     },
     onInit() {
         this.fetchDate();
@@ -74,17 +75,29 @@ export default {
     fecthWeather : function(){
 
 
-        geolocation.getLocation( (err, data) => {
-            console .log( 'getLastLocation: ' + err + " data: " + JSON .stringify(data));
-        });
+        let locData;
+        geolocation.getLocation({
+            success: function(data){
+                locData = data;
+                console.log("The location fetched:"+JSON.stringify(data));
+            },
+            fail: function(data, code) {
+                console.log('fail to get location. code:' + code + ', data:' + data);
+            },
+            complete: function(){
+                console.log('in Complete');
+            }
+        })
+        console.log('Location Data: '+JSON.stringify(locData) +" lat: "+ locData.latitude + " long: "+ locData.longitude );
 
+        this.lat = locData.latitude;
+        this.long = locData.longitude;
 
-        var dataw = JSON.stringify(json_data);
-        console.log("JSON Data : "+ JSON.stringify(json_data));
-        let weather_data = JSON.parse(dataw);
+        console.log("Lat : "+this.lat  +" Long : "+this.long);
+
         let data;
         fetch.fetch({
-            url:'https://api.openweathermap.org/data/2.5/weather?lat='+ weather_data[0].lat +'&lon='+weather_data[0].long+'&appid=9ca3abfc02f621a4fe7696f670f04a57',
+            url:'https://api.openweathermap.org/data/2.5/weather?lat='+ this.lat +'&lon='+this.long+'&appid=9ca3abfc02f621a4fe7696f670f04a57',
             responseType:"JSON",
             method: 'GET',
             success:function(resp)
