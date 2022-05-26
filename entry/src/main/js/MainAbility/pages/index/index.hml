@@ -96,7 +96,7 @@
                 <image id="count" src="common/images/BP_range.png"></image>
                 <div class="bpm_text">
                     <text>{{ bpm }}</text>
-                    
+
                     <text id="bpm_title"> BPM </text>
 
                 </div>

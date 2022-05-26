@@ -13,14 +13,14 @@
 * See the License for the specific language governing permissions and
 * limitations under the License.
 */
-.body{
+.body {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:#111;
+    background-color: #111;
     color: #FFFFFF;
 }
 
@@ -38,15 +38,14 @@
     background-image: url(common/images/bg_lines.png);
 }
 
-.header{
+.header {
     position: relative;
     width: 100%;
     height: 30%;
-    top: -28fp;
-/*    background-color: aliceblue;*/
+    top: -28fp;/*    background-color: aliceblue;*/
 }
 
-.lft_container{
+.lft_container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -57,7 +56,7 @@
 }
 
 
-.header .lft_container .weather_container{
+.header .lft_container .weather_container {
     position: relative;
     top: -10fp;
     left: -20fp;
@@ -66,14 +65,13 @@
     display: flex;
     flex-direction: row;
 }
-.header .lft_container .weather_container .weather
-{
+
+.header .lft_container .weather_container .weather {
     width: 80fp;
-    height: 100%;
-/*    background-color: aliceblue;*/
+    height: 100%;/*    background-color: aliceblue;*/
 }
 
-.header .lft_container .weather_container .weather image{
+.header .lft_container .weather_container .weather image {
     position: absolute;
     height: 20fp;
     width: 25fp;
@@ -82,7 +80,7 @@
 /*    background-color: #fff;*/
 }
 
-.header .lft_container .weather_container .weather_text{
+.header .lft_container .weather_container .weather_text {
     height: 100%;
     width: 100%;
     top: 8fp;
@@ -90,12 +88,12 @@
     color: #FFFFFF;
 }
 
-.header .lft_container .weather_container .weather_text text{
+.header .lft_container .weather_container .weather_text text {
     font-size: 7fp;
     position: absolute;
 }
 
-.date{
+.date {
     position: relative;
     top: -20fp;
     left: 10fp;
@@ -103,15 +101,14 @@
     width: 100%;
 }
 
-.date text{
+.date text {
     position: absolute;
     font-size: 7fp;
     color: #FFFFFF;
 }
 
 
-
-.container .header .cal{
+.container .header .cal {
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -120,7 +117,7 @@
     font-family: roboto;
 }
 
-.container .header .cal image{
+.container .header .cal image {
     position: absolute;
     top: 0;
     left: 0;
@@ -128,7 +125,7 @@
     width: 41fp;
 }
 
-.container .header .cal #cal_ic{
+.container .header .cal #cal_ic {
     position: absolute;
     top: 0;
     left: 0;
@@ -138,7 +135,7 @@
     margin-left: 10fp;
 }
 
-.container .header .cal #range{
+.container .header .cal #range {
     position: absolute;
     top: 0;
     left: 15fp;
@@ -147,42 +144,44 @@
 
 }
 
-.cal_text{
+.cal_text {
     display: flex;
     flex-direction: column;
     margin-top: 27fp;
     left: -5fp;
 }
 
-.cal_text text{
+.cal_text text {
     font-size: 8fp;
     color: #00FFFF;
 }
 
-.cal_text #kcal{
+.cal_text #kcal {
     font-size: 5fp;
 }
+
 .clock {
     display: flex;
     flex-direction: column;
 }
+
 .clock text {
     font-size: 8fp;
     margin-left: 5fp;
     margin-bottom: 5fp;
 }
 
-.clock .time image{
+.clock .time image {
     height: 40fp;
     width: 26fp;
 }
 
-.clock .time #last{
+.clock .time #last {
     height: 40fp;
     width: 25fp;
 }
 
-.clock .time #colon{
+.clock .time #colon {
     height: 30fp;
     width: 10fp;
     margin-top: 6fp;
@@ -198,7 +197,8 @@
     margin-left: 14fp;
     margin-top: 25fp;
 }
-.footer .bpm image{
+
+.footer .bpm image {
     position: absolute;
     top: 0;
     left: 0;
@@ -206,14 +206,14 @@
     width: 41fp;
 }
 
-.footer .bpm #bpm_ic{
+.footer .bpm #bpm_ic {
     height: 15fp;
     width: 17fp;
     margin-top: 14fp;
     margin-left: 12fp;
 }
 
-.footer .bpm #count{
+.footer .bpm #count {
     position: absolute;
     top: 14fp;
     right: 2fp;
@@ -226,28 +226,28 @@
     display: flex;
     flex-direction: column;
     left: 5fp;
-    bottom:25fp;
+    bottom: 25fp;
 }
 
-.footer .bpm .bpm_text text{
+.footer .bpm .bpm_text text {
     font-size: 8fp;
-    color:#FF0000;
+    color: #FF0000;
 
 }
 
-.footer .bpm .bpm_text #bpm_title{
+.footer .bpm .bpm_text #bpm_title {
     font-size: 4fp;
     margin-left: 5fp;
 }
 
-.corner{
+.corner {
     margin-top: 20fp;
     padding-left: 38fp;
     display: flex;
     flex-direction: column;
 }
 
-.corner .steps_container text{
+.corner .steps_container text {
     font-size: 8fp;
     margin-top: 10fp;
 }
@@ -260,21 +260,21 @@
     margin-left: 5fp;
 }
 
-.corner .steps_container .steps_range image{
+.corner .steps_container .steps_range image {
     position: absolute;
     height: 40fp;
     width: 40fp;
 
 }
 
-.corner .steps_container .steps_range #steps_ic{
+.corner .steps_container .steps_range #steps_ic {
     height: 15fp;
     width: 15fp;
     margin-top: 5fp;
     margin-left: 5fp;
 }
 
-.corner .steps_container .steps_range #steps_count{
+.corner .steps_container .steps_range #steps_count {
     height: 40fp;
     width: 20fp;
     margin-left: 10fp;
@@ -285,9 +285,6 @@
     font-size: 6fp;
     margin-top: 3fp;
 }
-
-
-
 
 
 @media screen and (device-type: tablet) and (orientation: landscape) {
